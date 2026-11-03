@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zare Studio | Luxury Fashion</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #292522;
+  background: #faf8f4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  background: #fff;
+}
+
+.logo {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+nav a {
+  color: #292522;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+
+.hero {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 60px 10%;
+  background: #eee7dc;
+}
+
+.hero-content {
+  max-width: 520px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(42px, 6vw, 70px);
+  line-height: 1.1;
+  font-weight: normal;
+  margin-bottom: 22px;
+}
+
+.hero p {
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.button {
+  display: inline-block;
+  background: #77434b;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.button:hover {
+  background: #543038;
+}
+
+section {
+  padding: 75px 8%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.product img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+.product h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 15px;
+}
+
+.product p {
+  margin: 10px 0 15px;
+  color: #77434b;
+}
+
+.about {
+  background: #eee7dc;
+  text-align: center;
+}
+
+.about p {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.9;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+.contact a {
+  color: #77434b;
+}
+
+footer {
+  background: #292522;
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+  line-height: 2;
+  font-size: 14px;
+}
+
+footer a {
+  color: white;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #218c55;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px #0002;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  .hero {
+    min-height: 400px;
+    padding: 50px 7%;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .product img {
+    height: 400px;
+  }
+
+  section {
+    padding: 55px 7%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ZARÉ STUDIO</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#collection">Collection</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow">THE ART OF ELEGANT DRESSING</p>
+
+    <h1>Timeless Style.<br>Modern Elegance.</h1>
+
+    <p>
+      Discover our curated collection of elegant fashion,
+      designed for every special moment.
+    </p>
+
+    <a class="button" href="#collection">
+      Explore Collection
+    </a>
+  </div>
+</section>
+
+<section id="collection">
+  <h2 class="section-title">Our Collection</h2>
+
+  <div class="products">
+
+    <article class="product">
+      <img
+        src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=800&q=80"
+        alt="Elegant evening dress">
+
+      <h3>Classic Evening Dress</h3>
+      <p>$120</p>
+
+      <a class="button"
+         href="https://wa.me/923115389477?text=Hello%2C%20I%20am%20interested%20in%20the%20Classic%20Evening%20Dress.">
+        Enquire Now
+      </a>
+    </article>
+
+    <article class="product">
+      <img
+        src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+        alt="Modern fashion collection">
+
+      <h3>Modern Everyday Wear</h3>
+      <p>$85</p>
+
+      <a class="button"
+         href="https://wa.me/923115389477?text=Hello%2C%20I%20am%20interested%20in%20Modern%20Everyday%20Wear.">
+        Enquire Now
+      </a>
+    </article>
+
+    <article class="product">
+      <img
+        src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80"
+        alt="Luxury fashion collection">
+
+      <h3>Signature Collection</h3>
+      <p>$150</p>
+
+      <a class="button"
+         href="https://wa.me/923115389477?text=Hello%2C%20I%20am%20interested%20in%20the%20Signature%20Collection.">
+        Enquire Now
+      </a>
+    </article>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="section-title">About Zare Studio</h2>
+
+  <p>
+    Zare Studio celebrates timeless elegance and
+    contemporary fashion. Our collection is thoughtfully
+    curated for those who appreciate quality, style,
+    and individuality.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Get in Touch</h2>
+
+  <p>
+    Interested in our collection or have a question?
+    We would love to hear from you.
+  </p>
+
+  <p>
+    Email:
+    <a href="mailto:elifnoor433@gmail.com">
+      elifnoor433@gmail.com
+    </a>
+  </p>
+
+  <a class="button"
+     href="https://wa.me/923115389477?text=Hello%20Zare%20Studio%2C%20I%20would%20like%20to%20know%20more%20about%20your%20collection.">
+    Contact on WhatsApp
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <p>Zaré Studio — A Study in Timeless Elegance</p>
+  <p>© 2026 Zare Studio. All rights reserved.</p>
+  <p>
+    <a href="mailto:elifnoor433@gmail.com">
+      Email Us
+    </a>
+  </p>
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/923115389477?text=Hello%20Zare%20Studio"
+   target="_blank">
+  WhatsApp
+</a>
+
+</body>
+</html>
